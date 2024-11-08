@@ -36,8 +36,27 @@ nav a:hover {
     color: #efdf84; 
 }
 
+
 .container {
     padding: 20px;
+}
+
+/* About Me Section */
+.about-content {
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(255, 255, 255, 0.955); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    margin: 10px;
+    padding: 15px;
+    
+    width: calc(22% - 40px); 
+}
+
+.about-content p {
+    color: rgba(29, 13, 2, 0.8); 
+    font-weight: bold; 
 }
 
 /* Memoirs Section */
@@ -129,53 +148,52 @@ body {
 }
 
 nav {
-    background-color: rgba(29, 13, 2, 0.8); /* Brownish color with transparency */
-    padding: 10px 20px; /* Add padding for better spacing */
+    background-color: rgba(29, 13, 2, 0.8); 
+    padding: 10px 20px; 
 }
 
-/* Other existing CSS... */
 
 /* Social Media Section */
 .socials-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Align items to the top */
-    padding: 20px; /* Add padding around the container */
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 20px; 
 }
 
 .socials {
     display: flex;
-    flex-direction: column; /* Stack image on top of content */
-    background-color: rgba(255, 255, 255, 0.955); /* White background with low opacity */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    flex-direction: column; 
+    background-color: rgba(255, 255, 255, 0.955); 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
     margin: 10px;
     padding: 15px;
     
-   width: calc(22% - 40px); /* Set width similar to memoirs */
+   width: calc(22% - 40px); 
 }
 
 .socials-content {
-   color: #8B4513; /* Brown color for text */
-   font-weight: bold; /* Make text bold */
+   color: rgba(29, 13, 2, 0.8); 
+   font-weight: bold; 
 }
 
 .socials-list {
-   list-style-type: none; /* Remove bullet points */
-   padding: 0; /* Remove default padding */
+   list-style-type: none; 
+   padding: 0; 
 }
 
 .socials-list li {
-   margin-bottom: 10px; /* Space between social links */
+   margin-bottom: 10px; 
 }
 
 .socials-list a {
-   text-decoration: none; /* Remove underline from links */
-   color: #8B4513; /* Brown color for links */
-   font-weight: bold; /* Make text bold */
-   transition: color 0.3s ease; /* Smooth color transition on hover */
+   text-decoration: none;
+   color: rgba(29, 13, 2, 0.8);  
+   font-weight: bold;
+   transition: color 0.3s ease; 
 }
 
 .socials-list a:hover {
-   color: #efdf84; /* Change color on hover (optional) */
+   color: #efdf84; 
 }
