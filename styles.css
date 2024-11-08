@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
@@ -42,7 +43,7 @@ nav a:hover {
 }
 
 .memoir {
-    display: flex; /* Aligns image and content side by side */
+    display: flex;
     flex-direction: column; /* Stack image on top of content */
     background-color: rgba(255, 255, 255, 0.955); /* Pastel yellow with low opacity (rgba) */
     border-radius: 15px; /* Rounded corners */
@@ -65,7 +66,50 @@ nav a:hover {
 .memoir-content {
    margin-top: 10px; /* Space between image and text below it */
    text-align: center; /* Center text under images */
-   color: white; /* Change memoir text color to white for better contrast against pastel yellow background */
+   color: rgba(29, 13, 2, 0.8); /* Change memoir text color to white for better contrast against pastel yellow background */
+}
+
+.memoir-content a {
+    color: rgba(29, 13, 2, 0.8); /* Brown color for the link text */
+    text-decoration: underline; /* Underline to indicate it's a hyperlink */
+}
+
+.memoir-content a:hover {
+    color: #efdf84; /* Change color on hover (optional) */
+    text-decoration: underline; /* Keep underline on hover */
+}
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of interests */
+    justify-content: center; /* Center all interest boxes */
+}
+
+.interest {
+    display: flex;
+    flex-direction: column; /* Stack image on top of content */
+    background-color: rgba(255, 255, 255, 0.955); /* Pastel yellow with low opacity (rgba) */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    margin: 10px;
+    padding: 15px;
+
+    width: calc(22% - 40px); /* Four interests per row in portrait format */
+    min-height: 300px; /* Set a minimum height for consistency */
+}
+
+.interest img {
+   width: auto; /* Allow width to adjust based on height */
+   height: auto; /* Maintain aspect ratio for images */
+   max-height: 250px; /* Increased max height for larger images in portrait mode */
+   object-fit: cover; /* Ensures images cover the area without distortion */
+   border-radius: 10px; /* Rounded corners for images */
+}
+
+.interest-content {
+   margin-top: 10px; /* Space between image and text below it */
+   text-align: right; /* Align text to the right within interest content */
+   color: black; /* Change interest text color to black */
 }
 
 .socials {

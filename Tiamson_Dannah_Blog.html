@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dannah Tiamson - Blog</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Link to Poppins -->
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    
     <script>
         function showSection(sectionId) {
-            // Hide all sections
+            
             const sections = document.querySelectorAll('.content-section');
             sections.forEach(section => {
                 section.style.display = 'none';
             });
-            // Show the selected section
+          
             document.getElementById(sectionId).style.display = 'block';
         }
 
-        // Show the home section by default
+        
         window.onload = function() {
             showSection('home');
         };
     </script>
+
 </head>
 <body>
 
@@ -35,130 +37,139 @@
         <a href="javascript:void(0);" onclick="showSection('socials')" style="margin: 0 30px;"><strong>Socials</strong></a>
         <hr>
     </center>
-
 </nav>
 
 <!-- Main Content -->
 <div class="container">
     <!-- Home Section -->
-    <section id="home" class="content-section home-section">
-        <center>
-        </center> 
-    </section>
+    <section id="home" class="content-section home-section"></section>
 
     <!-- Memoirs Section -->
     <section id="memoirs" class="content-section" style="display: none;">
-        <h2><strong>Memoirs</strong></h2>
+        <h2><strong>Memoirs and Musings</strong></h2>
         <div class="memoir-container">
+
             <!-- Memoir 1 -->
             <div class="memoir">
                 <img src="Assets/tiamson.dessertmuseum.jpeg" alt="Memoir 1 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 1</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Sugar, Spice, and Everything Nice: My Sweet Adventure at the Dessert Museum</a></h3>
+                    <p>Take a tour of the Dessert Museum with me, where I get lost in a whimsical world of sweets and sugary sculptures—perfect for anyone with a sweet tooth!</p>
                 </div>
             </div>
+
             <!-- Memoir 2 -->
             <div class="memoir">
                 <img src="Assets/tiamson.mindmuseum.jpeg" alt="Memoir 2 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 2</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Mind-Bending Exhibits: A Journey Through the Mind Museum with My Best Friend</a></h3>
+                    <p>Curiosity led us to the Mind Museum, where my friend and I spent hours exploring fascinating exhibits and activities, from the brain’s inner workings to the stars above!</p>
                 </div>
             </div>
+
             <!-- Memoir 3 -->
             <div class="memoir">
                 <img src="Assets/tiamson.themmuseum.jpg" alt="Memoir 3 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 3</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Not Just Paint on a Canvas: My Personal Experience at the M Museum</a></h3>
+                    <p>At first glance, these paintings might seem abstract, but the more I looked, the more I felt like each one was telling me a story. Here’s what I think these works are really about.</p>
                 </div>
             </div>
+
             <!-- Memoir 4 -->
             <div class="memoir">
                 <img src="Assets/tiamson.20thbirthday.jpeg" alt="Memoir 4 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 4</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Goodbye Teen Years, Hello 20s: A Reflection on the Journey So Far</a></h3>
+                    <p>As I step into my 20s, I can’t help but look back on the wild, fun, and sometimes chaotic ride of my teenage years—feeling grateful for the lessons learned and excited for what’s next.</p>
                 </div>
             </div>
+
             <!-- Memoir 5 -->
             <div class="memoir">
                 <img src="Assets/tiamson.batangassummer.png" alt="Memoir 5 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 5</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Summer Escape to Batangas: Falling in Love with the Province Life</a></h3>
+                    <p>From the stunning beaches to the laid-back charm of the province, my summer in Batangas was a refreshing reminder of the beauty in simplicity and the joy of slow, sun-kissed days.</p>
                 </div>
             </div>
+            
             <!-- Memoir 6 -->
             <div class="memoir">
                 <img src="Assets/tiamson.vintagephotoshoot.jpg" alt="Memoir 6 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 6</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">Stepping Back in Time: My Vintage Costume Photoshoot Experience</a></h3>
+                    <p> Who knew a school project could turn into a whole creative adventure? This vintage costume photoshoot for a school project turned out to be the creative adventure I never knew I needed—challenging at times, but so much fun and totally worth the effort.</p>
                 </div>
             </div>
+
             <!-- Memoir 7 -->
             <div class="memoir">
                 <img src="Assets/tiamson.2023reunion.jpeg" alt="Memoir 7 Image">
                 <div class="memoir-content">
-                    <h3>Memoir Title 7</h3>
-                    <p>A brief description of the memoir goes here.</p>
-                </div>
-            </div>
-            <!-- Memoir 8 -->
-            <div class="memoir">
-                <img src="Assets/tiamson.2023reunion.jpeg" alt="Memoir 8 Image">
-                <div class="memoir-content">
-                    <h3>Memoir Title 8</h3>
-                    <p>A brief description of the memoir goes here.</p>
+                    <h3><a href="#">A December to Remember: The Most Memorable Reunion Yet (December 27th, 2023)</a></h3>
+                    <p>In this memory, I’m showcasing the best moments of the day—from reconnecting with friends, dancing like no one was watching, to the nonstop laughs that made this reunion so magical. These are the moments I’ll never forget.</p>
                 </div>
             </div>
 
-        </div><!-- End of memoir-container -->
+            <!-- Memoir 8 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.nationalmuseum.png" alt="Memoir 8 Image">
+                <div class="memoir-content">
+                    <h3><a href="#">Discovering Wonders: A Day at the National Museum of Natural History</a></h3>
+                    <p>tepping into the National Museum of Natural History was like stepping into a time machine—surrounded by fascinating exhibits that brought the story of Earth’s biodiversity and evolution to life in the most incredible way.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
     <!-- Interests Section -->
     <section id="interests" class="content-section" style="display: none;">
         <h2><strong>Interests</strong></h2>
-        <div class="memoir-container">
-            <!-- Memoir 1 -->
-            <div class="memoir">
-                <img src="Assets/tiamson.dessertmuseum.jpeg" alt="Memoir 1 Image">
-                <div class="memoir-content">
+        <div class="interests-container">
+
+            <!-- Interest 1 -->
+            <div class="interests">
+                <img src="Assets/tiamson.dessertmuseum.jpeg" alt="Interests 1 Image">
+                <div class="interests-content">
                     <h3>Memoir Title 1</h3>
                     <p>A brief description of the memoir goes here.</p>
                 </div>
             </div>
-            <!-- Memoir 2 -->
-            <div class="memoir">
-                <img src="Assets/tiamson.mindmuseum.jpeg" alt="Memoir 2 Image">
-                <div class="memoir-content">
+
+             <!-- Interest 2 -->
+            <div class="interests">
+                <img src="Assets/tiamson.mindmuseum.jpeg" alt="Interests 2 Image">
+                <div class="interests-content">
                     <h3>Memoir Title 2</h3>
                     <p>A brief description of the memoir goes here.</p>
                 </div>
             </div>
-            <!-- Memoir 3 -->
-            <div class="memoir">
-                <img src="Assets/tiamson.themmuseum.jpg" alt="Memoir 3 Image">
-                <div class="memoir-content">
+
+             <!-- Interest 3 -->
+            <div class="interests">
+                <img src="Assets/tiamson.themmuseum.jpg" alt="Interests 3 Image">
+                <div class="interests-content">
                     <h3>Memoir Title 3</h3>
                     <p>A brief description of the memoir goes here.</p>
                 </div>
             </div>
-            <!-- Memoir 4 -->
-            <div class="memoir">
-                <img src="Assets/tiamson.20thbirthday.jpeg" alt="Memoir 4 Image">
+
+             <!-- Interest 4 -->
+            <div class="interests">
+                <img src="Assets/tiamson.20thbirthday.jpeg" alt="Interests 4 Image">
                 <div class="memoir-content">
                     <h3>Memoir Title 4</h3>
                     <p>A brief description of the memoir goes here.</p>
                 </div>
             </div>
-        </div><!-- End of memoir-container -->
+
+        </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Social Media Section -->
     <section id="contact" class="content-section" style="display: none;">
         <h2><strong>Contact Me</strong></h2>
         <p><strong>Email:</strong> 
