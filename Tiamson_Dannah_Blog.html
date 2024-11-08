@@ -3,322 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dannah Tiamson - Resume</title>
+    <title>Dannah Tiamson - Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Link to Poppins -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the home section by default
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
 </head>
-<body bgcolor="#F5F5DC">
+<body>
 
-    <!-- Header -->
-    <div align="center">
-        <h1><strong>D J M T</strong></h1>
-    </div>
+<!-- Navigation -->
+<nav>
+    <center>
+        <hr>
+        <a href="javascript:void(0);" onclick="showSection('home')" style="margin: 0 30px;"><strong>Home</strong></a>
+        <a href="javascript:void(0);" onclick="showSection('memoirs')" style="margin: 0 30px;"><strong>Memoirs & Musings</strong></a>
+        <a href="javascript:void(0);" onclick="showSection('interests')" style="margin: 0 30px;"><strong>Interests</strong></a>
+        <a href="javascript:void(0);" onclick="showSection('socials')" style="margin: 0 30px;"><strong>Socials</strong></a>
+        <hr>
+    </center>
 
-    <!-- Navigation -->
-    <nav>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Home Section -->
+    <section id="home" class="content-section home-section">
         <center>
-            <hr>
-            <a href="#home" style="margin: 0 15px;"><strong>Home</strong></a>
-            <a href="#contact" style="margin: 0 15px;"><strong>Contact</strong></a>
-            <a href="#skills" style="margin: 0 15px;"><strong>Skills</strong></a>
-            <a href="#projects" style="margin: 0 15px;"><strong>Projects</strong></a>
-            <a href="#experience" style="margin: 0 15px;"><strong>Experience</strong></a>
-            <hr>
-        </center>
-    </nav>
+        </center> 
+    </section>
 
-    <!-- Main Content -->
-    <table style="width: 100%;">
-        <tr>
-            <!-- Left Side (About Me, Education, Contact Me) -->
-            <td style="width: 50%; padding: 20px;">
-                <center>
-                    <img src="Tiamson_ProfilePicture.jpg" alt="Profile Picture" width="200" height="200">
-                    <div>
-                        <p><strong>Dannah Janelle M. Tiamson</strong></p>
-                    </div>
-                </center>
+    <!-- Memoirs Section -->
+    <section id="memoirs" class="content-section" style="display: none;">
+        <h2><strong>Memoirs</strong></h2>
+        <div class="memoir-container">
+            <!-- Memoir 1 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.dessertmuseum.jpeg" alt="Memoir 1 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 1</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 2 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.mindmuseum.jpeg" alt="Memoir 2 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 2</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 3 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.themmuseum.jpg" alt="Memoir 3 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 3</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 4 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.20thbirthday.jpeg" alt="Memoir 4 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 4</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 5 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.batangassummer.png" alt="Memoir 5 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 5</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 6 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.vintagephotoshoot.jpg" alt="Memoir 6 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 6</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 7 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.2023reunion.jpeg" alt="Memoir 7 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 7</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 8 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.2023reunion.jpeg" alt="Memoir 8 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 8</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
 
-                <!-- About Me -->
-                <section id="home">
-                    <center>
-                        <hr>
-                        <h2><strong>About Me</strong></h2>
-                        <hr>
-                        <p>I'm someone who loves exploring and pushing myself to grow, especially when it comes to things I'm passionate about. I find joy in trying new things and expanding my skills in areas that spark my interest, whether it's going on adventures or taking on challenges. I'm always enthusiastic and determined, dedicated to learning and improving, both personally and professionally.</p>
-                        <p><em>"Anything is possible as long as you work for it."</em></p>
-                    </center>
-                </section>
+        </div><!-- End of memoir-container -->
+    </section>
 
-                <!-- Education Page -->
-                <section id="education">
-                    <center>
-                        <hr>
-                        <h2><strong>Education</strong></h2>
-                        <hr>
-                        <table border="1" style="width: 100%;">
-                            <thead>
-                                <tr>
-                                    <th>Degree</th>
-                                    <th>Institution</th>
-                                    <th>Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Bachelor of Science in Information Systems</td>
-                                    <td>Technological University of the Philippines - Manila</td>
-                                    <td>2022 - Present</td>
-                                    <td>Expected Graduation: 2026</td>
-                                </tr>
-                                <tr>
-                                    <td>Senior High School</td>
-                                    <td>Lyceum of Alabang</td>
-                                    <td>Graduated with Honors: 2020-2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Junior High School</td>
-                                    <td>San Roque Catholic School Alabang</td>
-                                    <td>Graduated with Honors: 2016-2020</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </center>
-                </section>
 
-                <!-- Contact Page -->
-                <section id="contact">
-                    <center>
-                        <hr>
-                        <h2><strong>Contact Me</strong></h2>
-                        <hr>
-                        <p><strong>Phone:</strong> +63 | 09218886082</p>
-                        <p><strong>Email:</strong> <a href="mailto:djtiamson04@gmail.com">djtiamson04@gmail.com</a></p>
-                        <p><strong>Address:</strong> 32 B Ilaya Street, Alabang, Muntinlupa City, Manila, Philippines</p>
-                        <hr>
-                        <form action="#" method="post">
-                            <label for="name">Name:</label><br>
-                            <input type="text" id="name" name="name" required><br><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email" required><br><br>
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </center>
-                </section>
-            </td>
+    <!-- Interests Section -->
+    <section id="interests" class="content-section" style="display: none;">
+        <h2><strong>Interests</strong></h2>
+        <div class="memoir-container">
+            <!-- Memoir 1 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.dessertmuseum.jpeg" alt="Memoir 1 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 1</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 2 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.mindmuseum.jpeg" alt="Memoir 2 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 2</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 3 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.themmuseum.jpg" alt="Memoir 3 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 3</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+            <!-- Memoir 4 -->
+            <div class="memoir">
+                <img src="Assets/tiamson.20thbirthday.jpeg" alt="Memoir 4 Image">
+                <div class="memoir-content">
+                    <h3>Memoir Title 4</h3>
+                    <p>A brief description of the memoir goes here.</p>
+                </div>
+            </div>
+        </div><!-- End of memoir-container -->
+    </section>
 
-            <!-- Vertical Divider -->
-            <td style="width: 2px; background-color: #9297b8;"></td>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section" style="display: none;">
+        <h2><strong>Contact Me</strong></h2>
+        <p><strong>Email:</strong> 
+           <a href="mailto:djtiamson04@gmail.com">djtiamson04@gmail.com</a></p>
+        <p><strong>Social Media:</strong></p>
+        <ul class="socials">
+            <li><a href="https://github.com/djtiamson" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/y.dnlle/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
 
-            <!-- Right Side (Skills, Projects, Experience) -->
-            <td style="width: 50%; padding: 20px;">
-
-                <!-- Skills Page -->
-                <section id="skills">
-                    <center>
-                        <hr>
-                        <h2><strong>Skills</strong></h2>
-                        <hr>
-                        <ul>
-                            <li>Ability to Work Under Pressure</li>
-                            <li>Strong Group Work Skills</li>
-                            <li>Strong Communication Skills</li>
-                            <li>Proactive problem-solving abilities</li>
-                            <li>Creative and can think ‘Outside The Box’</li>
-                            <li>Basic Graphic Design and Video Editing Skills</li>
-                            <li>Social Media Management</li>
-                            <li>Time Management and Deadline Adherence</li>
-                            <li>Proficient in Microsoft Office</li>
-                        </ul>
-                        <hr>
-                        <p>Programming languages and tools I'm proficient in:</p>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Languages</th>
-                                    <th>Level</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>C#</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>C++</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>Java</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>SQL</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>CSS</td>
-                                    <td>Beginner</td>
-                                </tr>
-                                <tr>
-                                    <td>JavaScript</td>
-                                    <td>Beginner</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr>
-                        <p>Networking Skills:</p>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Skills</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Connecting Cisco Networking</td>
-                                </tr>
-                                <tr>
-                                    <td>VLAN Configuration</td>
-                                </tr>
-                                <tr>
-                                    <td>Routing</td>
-                                </tr>
-                                <tr>
-                                    <td>Ethernet Connection</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </center>
-                </section>
-
-                <!-- Projects Page -->
-                <section id="projects">
-                    <center>
-                        <hr>
-                        <h2><strong>Projects</strong></h2>
-                        <hr>
-                        <p>You can check my GitHub account under the username <a href="https://github.com/djtiamson" target="_blank">“djtiamson”</a>, where you’ll find some of the projects I have worked on. As an Information Systems student, most of these projects were completed as part of my university coursework.</p>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Project Name</th>
-                                    <th>Description</th>
-                                    <th>Language</th>
-                                    <th>Link</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Point of Sales</td>
-                                    <td>This system allows businesses to process sales transactions, manage inventory, and generate sales reports.</td>
-                                    <td>C</td>
-                                    <td><a href="https://github.com/djtiamson/Point-of-Sales">View Project</a></td>
-                                </tr>
-                                <tr>
-                                    <td>ATM Simulation</td>
-                                    <td>A program that mimics the functions of an ATM for banking tasks.</td>
-                                    <td>C++</td>
-                                    <td><a href="https://github.com/djtiamson/ATM-Simulation">View Project</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Using Inheritance</td>
-                                    <td>This project demonstrates the concept of inheritance in object-oriented programming.</td>
-                                    <td>Java</td>
-                                    <td><a href="https://github.com/djtiamson/Using-Inheritance">View Project</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Password Checker</td>
-                                    <td>A tool designed to assess the strength of user-created passwords.</td>
-                                    <td>Java</td>
-                                    <td><a href="https://github.com/djtiamson/Password-Checker">View Project</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Minesweeper</td>
-                                    <td>A digital version of the classic game where players uncover tiles on a grid.</td>
-                                    <td>C</td>
-                                    <td><a href="https://github.com/djtiamson/Minesweeper">View Project</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Database Management System (DBMS)</td>
-                                    <td>A system for managing user data, allowing for user registration and data manipulation.</td>
-                                    <td>Java</td>
-                                    <td><a href="https://github.com/djtiamson/Database-Management-System-DBMS-">View Project</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </center>
-                </section>
-
-                <!-- Additional Experience -->
-                <section id="experience">
-                    <center>
-                        <hr>
-                        <h2><strong>Additional Experiences</strong></h2>
-                        <hr>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Experience</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Managed personal YouTube channel for 2 years (2019-2021), accumulating 50k subscribers and approximately 5M total views.</td>
-                                </tr>
-                                <tr>
-                                    <td>Served as president of Red Cross Youth Club for 1 year (2019-2020), demonstrating leadership skills and organizational capabilities.</td>
-                                </tr>
-                                <tr>
-                                    <td>Has experience in online sales, including product photography, customer communication, and managing billing processes. Previous businesses include selling second-hand books, clothes, uniforms, and tech items.</td>
-                                </tr>
-                                <tr>
-                                    <td>Led a team for a school thesis project focused on developing a fire alarm system using an Arduino platform. Our project received the award for Best Project among our batch.</td>
-                                </tr>
-                                <tr>
-                                    <td>Passionate about creating and editing reels for personal social media platforms, with a keen eye for visual storytelling and content engagement. You can view some of my work on Instagram under the username @y.dnlle, where I have shared some of the reels I’ve created.</td>
-                                </tr>
-                                <tr>
-                                    <td>Designed applications using Figma software as part of a school project.</td>
-                                </tr>
-                                <tr>
-                                    <td>Skilled in Photoshop and Canva for various school projects and commissions, including:
-                                        <ul>
-                                            <li>Thumbnails</li>
-                                            <li>Invitations</li>
-                                            <li>Magazines</li>
-                                            <li>Brochures</li>
-                                            <li>Tarpaulins</li>
-                                            <li>Food Menus</li>
-                                            <li>Logos</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </center>
-                </section>
-            </td>
-        </tr>
-    </table>
-
-    <!-- Footer -->
-    <footer>
-        <center>
-            <hr>
-            <p><font color="#DAA520">&copy; 2024 DJMT. All rights reserved.</font></p>
-            <p><font color="#1C0D0D">
-                <a href="https://github.com/djtiamson"><font color="#1C0D0D">GitHub</font></a> |
-                <a href="https://www.instagram.com/y.dnlle/"><font color="#1C0D0D">Instagram</font></a> |
-                <a href="mailto:djtiamson04@gmail.com"><font color="#1C0D0D">Email</font></a>
-            </font></p>
-            <p><a href="Tiamson_Dannah_Resume.pdf" download>Download My Resume PDF</a></p>
-        </center>
-    </footer>
+</div>
 
 </body>
 </html>

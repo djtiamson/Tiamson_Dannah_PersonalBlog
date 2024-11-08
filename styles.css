@@ -1,0 +1,77 @@
+body {
+    background-image: url('Assets/tiamson.background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: rgba(29, 13, 2, 0.8); /* Brownish color with transparency */
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+nav a {
+    margin-left: 20px; /* Space between navigation links */
+    color: white; /* Change text color to white for better contrast */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Make text bold */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Add transition for color and text-decoration */
+}
+
+/* Aligning the first link to the left */
+nav a:first-child {
+    margin-left: 0; /* Remove left margin for the first link */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+    color: #efdf84; /* Change color on hover (example color) */
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Memoirs Section */
+.memoir-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of memoirs */
+    justify-content: center; /* Center all memoir boxes */
+}
+
+.memoir {
+    display: flex; /* Aligns image and content side by side */
+    flex-direction: column; /* Stack image on top of content */
+    background-color: rgba(255, 255, 255, 0.955); /* Pastel yellow with low opacity (rgba) */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    margin: 10px;
+    padding: 15px;
+    
+    width: calc(22% - 40px); /* Four memoirs per row in portrait format */
+    min-height: 300px;
+}
+
+.memoir img {
+   width: auto; /* Allow width to adjust based on height */
+   height: auto; /* Maintain aspect ratio for images */
+   max-height: 250px; /* Increased max height for larger images in portrait mode */
+   object-fit: cover; /* Ensures images cover the area without distortion */
+   border-radius: 10px; /* Rounded corners for images */
+}
+
+.memoir-content {
+   margin-top: 10px; /* Space between image and text below it */
+   text-align: center; /* Center text under images */
+   color: white; /* Change memoir text color to white for better contrast against pastel yellow background */
+}
+
+.socials {
+   list-style-type: none; /* Remove bullet points */
+}
+
+.socials li {
+   margin-bottom: 5px; /* Space between social links */
+}
