@@ -1,11 +1,17 @@
 body {
-    background-image: url('Assets/tiamson.background2.png');
+    background-image: url('Assets/tiamson.background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center; /* Center text within the h2 */
+     font-size: 2em; /* Increase font size (adjust as needed) */
+    margin: 0; /* Remove default margin if necessary */
 }
 
 nav {
@@ -79,6 +85,7 @@ nav a:hover {
     text-decoration: underline; /* Keep underline on hover */
 }
 
+/* Interests Section */
 .interests-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping of interests */
@@ -93,7 +100,7 @@ nav a:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
     margin: 10px;
     padding: 15px;
-
+    
     width: calc(22% - 40px); /* Four interests per row in portrait format */
     min-height: 300px; /* Set a minimum height for consistency */
 }
@@ -108,10 +115,12 @@ nav a:hover {
 
 .interest-content {
    margin-top: 10px; /* Space between image and text below it */
-   text-align: right; /* Align text to the right within interest content */
-   color: black; /* Change interest text color to black */
+   text-align: center; /* Align text to the right within interest content */
+   color: rgba(29, 13, 2, 0.8); /* Brown color for text */
 }
 
+
+/* Socials Section */
 .socials {
    list-style-type: none; /* Remove bullet points */
 }
